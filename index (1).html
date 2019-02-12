@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Portfolio - Julian Karnik</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/creative.min.css" rel="stylesheet">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #cccccc;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.close2 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close2:hover,
+.close2:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}    
+ .close3 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close3:hover,
+.close3:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}  
+    @media only screen and (min-width: 700px) {
+
+
+            .mycontainer {
+                /* This defines a flex container; inline or block depending on the given value. */
+                /* It enables a flex context for all its direct children. */
+                display: flex;
+
+                /* This establishes the main-axis, thus defining the direction flex items are placed in the flex container. */
+                /* flex-direction: row | row-reverse | column | column-reverse; */
+                flex-direction: row;
+
+                /* By default, flex items will all try to fit onto one line. */
+                /* You can change that and allow the items to wrap as needed with this property.*/
+                /* flex-wrap: nowrap | wrap | wrap-reverse; */
+                flex-wrap: wrap;
+
+                /* defines the alignment along the main axis. It helps distribute extra free space */
+                /* justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly; */
+                justify-content: flex-start;
+
+                /* This defines the default behavior for how flex items are laid out along the cross axis on the current line. */
+                /*  align-items: stretch | flex-start | flex-end | center | baseline; */
+                align-items: stretch;
+
+
+                /* align-content: flex-start | flex-end | center | space-between | space-around | stretch; */
+                align-content: stretch;
+
+                padding-bottom: 10px;
+                /*  border: 5px solid #A4033C;*/
+                margin: 10px;
+                padding: 0px;
+                background-color: solid #f05f40;
+
+            }
+
+            .outerbox1 {
+                display: flex;
+                flex-direction: row;
+                width: 33.3%;
+                height: 250px;
+                border: 8px solid #f05f40;
+                background-color: solid #f05f40;
+                background-image: url("img/cards.jpg");
+                background-size: cover;
+                
+             }
+             .outerbox1:hover {opacity: 0.8;}
+
+             .outerbox2 {
+                display: flex;
+                flex-direction: row;
+                width: 33.3%;
+                height: 250px;
+                border: 8px solid #f05f40;
+                background-color: solid #f05f40;
+                background-image: url("img/airports2.jpg");
+                color: #000; 
+                background-size: cover; 
+             }
+             .outerbox2:hover {opacity: 0.7;}
+        
+             .outerbox3 {
+                display: flex;
+                flex-direction: row;
+                width: 33.3%;
+                height: 250px;
+                border: 8px solid #f05f40;
+                background-color: solid #f05f40;
+                background-image: url("img/marvel.jpg");
+                color: #000;
+                 background-size: cover;
+             }
+             .outerbox3:hover {opacity: 0.8;}
+        
+             .title1 {
+                display: none;
+                width: 100%;
+                height: 250px;
+                top: 30px;
+                margin-left 30px;
+                position: relative;
+                text-align: center;
+                
+            }
+            .outerbox1:hover div.title1 {
+                display: block; 
+                color: rgba(0,0,0, 1);
+            }
+        
+            .title2 {
+                display: none;
+                width: 100%;
+                height: 250px;
+                top: 30px;
+                margin-left 30px;
+                position: relative;
+                text-align: center;
+            }
+        
+            .outerbox2:hover div.title2 {
+                display: block;   
+                color: rgba(255, 255, 255, 1);
+
+            }
+        
+            .title3 {
+                display: none;
+                width: 100%;
+                height: 250px;
+                top: 30px;
+                margin-left 30px;
+                position: relative;
+                text-align: center;
+            }
+        
+            .outerbox3:hover div.title3 {
+                display: block; 
+                color: rgba(0,0,0, 1);
+            }
+        
+            .hoverbox {
+                margin: 0px;
+                padding: 0px;
+                width: 100%;
+                border: 1px solid #f05f40;
+            }
+
+            .box {
+                /*  background: yellow;*/
+                /*   border: 5px solid #eaff00; */
+                margin: 0px;
+                padding: 0px;
+                width: 100%;
+
+                /* centre the elements inside the box item */
+                text-align: center;
+
+                /*rounded corners */
+                /* Four values - border-radius: 15px 50px 30px 5px; (first value applies to top-left corner, second value applies to top-right corner, third value applies to bottom-right corner, and fourth value applies to bottom-left corner): */
+                /*border-radius: 15px 80px 30px;*/
+                border: 5px solid #f05f40;
+                background-color: solid #f05f40;
+                /*  padding: 20px; */
+
+            }
+
+            .innerbox {
+                /*  background: #eaff00; */
+                /* border: 1px solid purple;*/
+                margin: 3px;
+                background-color: solid #f05f40;
+            }
+
+            .innerbox.small {
+                /*  background: #eaff00; */
+                /* border: 1px solid purple;*/
+                font-size: 1em;
+                font-family: Verdana;
+                color: #f05f40;
+            }
+
+            img {
+                /*background: lightblue;*/
+                width: 100%; 
+    /*           height: 150px;*/
+                object-fit: cover; 
+                /* Set up proportionate scaling 
+                max-width: 100%;
+                height: auto;
+                    object-fit: cover; */
+      /*          padding: 1px; */
+                /* border: 5px solid #021a40;*/
+            }
+
+            /*  Object Fit: cover stretches or shrinks the image proportionally to fill the container. The image is cropped horizontally -or- vertically if necessary .contain stretches or shrinks the image proportionally to fit inside the container.
+scale-down shrinks the image proportionally to fit inside the container. */
+
+
+            #title {
+                /*use em to allow users to resize the text in the browser menu */
+                font-size: 2em;
+                font-family: Verdana;
+                color: #f05f40;
+            }
+
+            .hover {
+                /* padding: 5px;*/
+                background: #f05f40;
+            }
+        }
+
+        /* END MEDIA QUERY */
+        /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+        /* SMALL DEVICES*/
+        @media screen and (max-width: 700px) {
+
+            .mycontainer {
+                display: flex;
+                flex-direction: column;
+                padding-bottom: 10px;
+            /*    border: 1px solid #444444; */
+                /* margin: 20px;*/
+            }
+
+            .outerbox1 {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: 350px;
+                object-fit: cover;
+                border: 5px solid #f05f40;
+                background-image: url("img/cards.jpg");
+                background-size: cover;
+                color: #000;
+
+            }
+            .outerbox1:hover {opacity: 0.6;}
+            .outerbox2 {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: 350px;
+                object-fit: cover;
+                border: 5px solid #f05f40;
+                background-image: url("img/airports2.jpg");
+                background-size: cover;
+                color: #fff;
+
+            }
+            .outerbox2:hover {opacity: 0.6;}
+            .outerbox3 {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: 350px;
+                object-fit: cover;
+                border: 5px solid #f05f40;
+                background-image: url("img/marvel.jpg");
+                background-size: cover;
+                color: #000;
+
+            }
+            .outerbox3:hover {opacity: 0.6;}
+
+
+                    
+             .title1 {
+                display: none;
+                width: 100%;
+                height: 250px;
+                top: 30px;
+                margin-left 30px;
+                position: relative;
+                text-align: center;
+            }
+            .outerbox1:hover div.title1 {
+            display: block;   
+            }
+        
+            .title2 {
+                display: none;
+                width: 100%;
+                height: 250px;
+                top: 30px;
+                margin-left 30px;
+                position: relative;
+                text-align: center;
+            }
+        
+            .outerbox2:hover div.title2 {
+            display: block;   
+            }
+        
+            .title3 {
+                display: none;
+                width: 100%;
+                height: 250px;
+                top: 30px;
+                margin-left 30px;
+                position: relative;
+                text-align: center;
+            }
+        
+            .outerbox3:hover div.title3 {
+            display: block;   
+            }
+        
+
+            .hoverbox {
+                margin: 0px;
+                padding: 5px;
+                width: 100%;
+                border: 1px;
+            }
+
+            .box {
+                border: 15px solid #f05f40;
+            
+                /* centre the elements inside the box item */
+                text-align: center;
+            }
+
+            img {
+                width: 100%;
+/*                height: 200px;*/
+                object-fit: cover;
+                /* Set up proportionate scaling 
+                max-width: 100%;
+                height: auto;
+                    object-fit: cover; */
+/*                padding: 1px;*/
+            /*    border: 5px solid #021a40; */
+            }
+
+            #title {
+                /*use em to allow users to resize the text in the browser menu */
+                font-size: 2em;
+                font-family: Verdana;
+                color: #000;
+
+            }
+
+            #title {
+                /*use em to allow users to resize the text in the browser menu */
+                font-size: 2em;
+                font-family: Verdana;
+                color: #000;
+
+            }
+
+            .innerbox.small {
+                /*  background: #eaff00; */
+                /* border: 1px solid purple;*/
+                font-size: 1em;
+                font-family: Verdana;
+                color: #000;
+            }
+
+            .hover {
+                 padding: 5px;
+                background: #C0C0C0;
+
+            }
+
+        }
+
+        /* END MEDIA QUERY */
+
+    
+        .blue {
+    padding: 0.3rem 2rem;
+    border: 1px #ccc solid;
+    display: inline-block;
+    margin: 1.5rem 0 0;
+    border-radius: 50px;
+    text-decoration:none;
+    color:black;
+    transition: background 800ms ease;
+    font-family: sans-serif;
+    object-position: center;
+    background-color: white;
+    }
+    .blue:disabled {
+        color:grey;
+        }  
+    .blue:hover {
+        color: #f05f40;
+        }    
+
+    
+</style> 
+      
+
+      
+</head>
+
+  <body id="page-top">
+
+  <div id="myModal1" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+      <center>
+    
+      <h2>Blackjack</h2><p></p> <br>
+      <img src="img/blackjack.jpg" opacity=0.7>
+      <br>        
+      <h3>Project Brief</h3><p> A classic game of Blackjack created with Javascript and HTML/CSS</p>
+      <h3>Experience gained</h3><p>Using event handlers <br> Css display and hidden toggles to show cards on the dealer board</p>
+      <h3>Future scope</h3><p>Adding the ability to change the value of the initial bet. Allowing the player to split the cards if their first two cards are a pair.</p>
+        <span id="modalbutton1" class="blue">Live demo</span>
+        <span id="modalbutton2" class="blue">GitHub</span>
+        <span id="modalbutton3" class="blue">Close</span>
+      </center>
+  </div>
+  </div>
+
+  <div id="myModal2" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close2">&times;</span>
+    <center>
+      <h2>Airport data visualisation</h2> <br>
+      <img src="img/airportcharts.jpg">    
+      <h3>Project Brief</h3><p> To develop a user interactive data visualisation of the top ten busiest airports in the world.</p>
+      <h3>Experience gained</h3><p>Using APIs from canvasJS.com <br> Using JSON data storage format</p>
+      <h3>Future scope</h3><p>Adding more years of data and also adding the top fifty airports globally</p>     
+        <span id="modalbutton4" class="blue">Live demo</span>
+        <span id="modalbutton5" class="blue">GitHub</span>
+        <span id="modalbutton6" class="blue">Close</span>
+      </center>    
+  </div>
+  </div>
+  <div id="myModal3" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close3">&times;</span>
+      <center>
+      <h2>Marvel Cinematic Universe</h2> <br>
+      <img src="img/mcu2.jpg">      
+      <h3>Project Brief</h3><p> Develop an interactive database with full CRUD (Create, Read, Update and Delete) functionality.</p>
+      <h3>Experience gained</h3><p>SQL databases <br>Model View Controller methodology for interacting with SQL databases</p>
+      <h3>Future scope</h3><p>Adding extra tables to the database to include more information about the characters.</p>
+        <span id="modalbutton7" class="blue">Live demo</span>
+        <span id="modalbutton8" class="blue">Close</span>
+      </center>
+  </div>
+  </div>
+      
+      
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Home</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#services">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="masthead text-center text-white d-flex">
+      <div class="container my-auto">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h1 class="text-uppercase">
+              <strong>Julian Karnik  </strong>
+            </h1>
+              <h2 class="text-uppercase">Software Developer</h2>
+            <hr>
+          </div>
+          <div class="col-lg-8 mx-auto">
+            <p class="text-faded mb-5"> </p>
+            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="bg-primary" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading text-white">Here's what Julian has been upto:</h2>
+            <hr class="light my-4">
+            <p class="text-faded mb-4">Julian Karnik has a Mathematics degree from Cambridge Univeristy. He has extensive work experience in finance and has taken the Developer program from JustIT. This covers HTML and programming in JavaScript and C#. He is familiar with Model View Controller methodology of interacting with SQL Databases and the Unix operating system. </p>
+            <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">View Skills!</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Software Skills</h2>
+            <hr class="my-4">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fas fa-4x fa-gem text-primary mb-3 sr-icon-1"></i>
+              <h3 class="mb-3">HTML/CSS</h3>
+              <p class="text-muted mb-0">Front end web development</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fas fa-4x fa-paper-plane text-primary mb-3 sr-icon-2"></i>
+              <h3 class="mb-3">JavaScript</h3>
+              <p class="text-muted mb-0">Experience in developing JavaScript rich websites</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fas fa-4x fa-code text-primary mb-3 sr-icon-3"></i>
+              <h3 class="mb-3">C#</h3>
+              <p class="text-muted mb-0">Coding and back end web development with C# and in Unix</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fas fa-4x fa-heart text-primary mb-3 sr-icon-4"></i>
+              <h3 class="mb-3">Soft skills</h3>
+              <p class="text-muted mb-0">Experience presenting and in client facing roles</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+      
+    <section class="p-0" id="portfolio">  
+<!--        <div class="container">    -->
+      <div class="mycontainer">
+        <div id="outerbox1" class="outerbox1">
+            <div class="title1"><h1>Blackjack</h1><br> <p> The clasisc card game</p>
+            </div>
+        </div>
+        <div id="outerbox2" class="outerbox2">
+            <div class="title2"><h1>Airports</h1><br> <p> Data visualisation</p>
+            </div>        </div>
+        <div id="outerbox3" class="outerbox3">
+            <div class="title3"><h1>Marvel</h1><br> <p> Character's database</p>
+            </div>
+        </div>
+        </div>
+  </section>
+
+    <section class="bg-dark text-white">
+      <div class="container text-center">
+        <h2 class="mb-4">Download CV</h2>
+        <a class="btn btn-light btn-xl sr-button" href="190211juliankarnikDeveloper.docx" target="_blank">Download resume</a>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading">Let's Get In Touch!</h2>
+            <hr class="my-4">
+            <p class="mb-5">Ready to find out more? That's great! Give us a call or send us an email and we will get back to you as soon as possible! </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 ml-auto text-center">
+            <i class="fas fa-phone fa-3x mb-3 sr-contact-1"></i>
+            <p>07849 270 609</p>
+          </div>
+          <div class="col-lg-4 mr-auto text-center">
+            <i class="fas fa-envelope fa-3x mb-3 sr-contact-2"></i>
+            <p>
+           
+              <a href="mailto:your-email@your-domain.com" style="text-decoration: underline">juliankarnik@hotmail.com</a>
+            </p>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 ml-auto text-center">
+                <span id="modalbutton9" class="blue">LinkedIn</span>
+            </div>
+            <div class="col-lg-4 mr-auto text-center">
+                <span id="modalbutton10" class="blue">GitHub</span>
+                
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/creative.min.js"></script>
+
+    <script>
+      var modal = document.getElementById('myModal1');
+      var modal2 = document.getElementById('myModal2');
+      var modal3 = document.getElementById('myModal3');
+      var img1 = document.getElementById("outerbox1");
+      var img2 = document.getElementById("outerbox2");
+      var img3 = document.getElementById("outerbox3");
+
+      var span1 = document.getElementsByClassName("close")[0];
+      var span2 = document.getElementsByClassName("close2")[0];
+      var span3 = document.getElementsByClassName("close3")[0];
+        
+       img1.onclick = function() {
+            modal.style.display = "block";
+        }
+       img2.onclick = function() {
+            modal2.style.display = "block";
+        }
+       img3.onclick = function() {
+            modal3.style.display = "block";
+        }
+        window.onclick = function(event) {
+            if (event.target == modal)  {
+            modal.style.display = "none";
+            }
+            if (event.target == modal2) {
+            modal2.style.display = "none";
+            }
+            if (event.target == modal3) {
+            modal3.style.display = "none"
+            }
+        }
+        span1.onclick = function() {
+            modal.style.display = "none";
+        }
+        span2.onclick = function() {
+            modal2.style.display = "none";                
+        }
+        span3.onclick = function() {
+             modal3.style.display = "none";    
+        }
+        
+        modalbutton1.onclick = function() {
+            window.open('http://www.juliankarnik.com/Blackjack/game6.html');
+        }
+        modalbutton2.onclick = function() {
+            window.open('https://github.com/julian17uk/blackjack');
+        }
+        modalbutton3.onclick = function() {
+            modal.style.display = "none";
+        }
+        modalbutton4.onclick = function() {
+            window.open('http://www.juliankarnik.com/Airportcharts/Airportcharts.html');
+        }
+        modalbutton5.onclick = function() {
+            window.open('https://github.com/julian17uk/Airportcharts');
+        }
+        modalbutton6.onclick = function() {
+            modal2.style.display = "none";
+        }
+        modalbutton7.onclick = function() {
+            window.open('http://www.mcu.juliankarnik.co.uk');
+        }
+        modalbutton8.onclick = function() {
+            modal3.style.display = "none";
+        }
+        modalbutton9.onclick = function() {
+            window.open('https://www.linkedin.com/in/julian-karnik-4241a11');
+        }
+        modalbutton10.onclick = function() {
+            window.open('https://github.com/julian17uk');
+        }
+      
+      </script>  
+      
+  </body>
+
+</html>
